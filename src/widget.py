@@ -19,11 +19,6 @@ def mask_account_card(str_number_card_or_account: str) -> str:
     return text
 
 
-print(mask_account_card("Visa 1234123412341234"))
-print(mask_account_card("Visa Classic 1234123412341234"))
-print(mask_account_card("Счет 12341234123412341234"))
-
-
 def get_date(user_data: str) -> str:
     """Преобразование даты в формат ДД.ММ.ГГ"""
     data_obj = datetime.fromisoformat(user_data)
@@ -31,4 +26,5 @@ def get_date(user_data: str) -> str:
     return formatted_data
 
 
-print(get_date("2024-03-11T02:26:18.671407"))
+if __name__ == "__main__":
+    print(get_date("2024-03-11T02:26:18.671407"))
