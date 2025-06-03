@@ -23,6 +23,9 @@ get_mask_account
 4. Функция с обработкой даты get_date 
 5. Функция принимает список словарей и возвращает новый список актуальных словарей filter_by_state
 6. Функция принимает список словарей и сортирует sort_by_date
+7. Функция filter_by_currency принимает список словарей на вход.
+8. Реализована функция-генератор transaction_descriptions
+9. Реализован генератор card_number_generator
 
 ## Тестирование:
 
@@ -30,5 +33,7 @@ get_mask_account
 - [test_masks.py](...)
 - [test_widget.py](...)
 - [test_processing.py](...)
+- [test_generators.py](...)
 
-Фикстура реализована в файле [conftest.py](...)
+Фикстура реализована в файле: 
+[conftest.py](...)
